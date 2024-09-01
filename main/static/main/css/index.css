@@ -39,6 +39,17 @@ body{
   background-image: url("/static/main/img/about.png");
   background-size: cover;
 }
+
+#frame{
+  background-image: url("/static/main/img/frame.jpg");
+  background-size: cover;
+}
+
+#lenses{
+  background-image: url("/static/main/img/lenses.png");
+  background-size: cover;
+}
+
 .swiper-slide{
   display: flex !important;
   justify-content: center;
