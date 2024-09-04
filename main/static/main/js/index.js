@@ -2,7 +2,15 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
   loop: true,
-  parallax: true,
+  effect: 'coverflow',
+  coverflowEffect: {
+      // depth: 200,
+      slideShadows: false,
+      rotate: 1,
+      modifier: 4,
+  },
+
+  slidesPerView: 3,
 
   // If we need pagination
   pagination: {
