@@ -35,6 +35,18 @@
   {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
 </div>
 
+<div class='auth'>
+  {% if user.is_authenticated %}
+  {{user.username}}
+  <form action="/login/logout" method='POST'>
+    {% csrf_token %}
+    <input type="submit" value="Выйти">
+  </form>
+  {% else %}
+  <a class="register" href="/login/">регистрация</a>
+  <a class="open" href="/login/login">войти</a>
+  {% endif %}
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/static/main/js/index.js"></script>
 
