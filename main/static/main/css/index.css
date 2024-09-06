@@ -43,12 +43,27 @@ body{
 }
 
 #frame{
-  background-image: url("/static/main/img/frame.jpg");
+  background-image: url("/static/main/img/frame.png");
   background-size: cover;
 }
 
-#lenses{
-  background-image: url("/static/main/img/lenses.png");
+#news{
+  background-image: url("/static/main/img/news.jpg");
+  background-size: cover;
+}
+
+#lensess{
+  background-image: url("/static/main/img/lensess.jpg");
+  background-size: cover;
+}
+
+#portfolio{
+  background-image: url("/static/main/img/portfolio.png");
+  background-size: cover;
+}
+
+#reviews{
+  background-image: url("/static/main/img/OS.jpg");
   background-size: cover;
 }
 
