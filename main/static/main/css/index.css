@@ -65,3 +65,19 @@ body{
   right: 0;
 
 }
+
+@media(max-width:1250px){
+  .swiper{
+    width: 100%;
+  }
+}
+
+@media(max-width:850px){
+  .swiper{
+    height: 150px;
+    font-size: 20px;
+  }
+  .swiper-slide{
+    font-size: 20px;
+  }
+}
