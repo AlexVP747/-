@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/main/css/review.css">
+  <title>Отзывы</title>
+</head>
+<body>
+  {% for review in list %}
+  <div class='review'>
+  <h2>{{review.user.username}}</h2>
+  <p>{{review.text}}</p>
+  <img src="{{review.foto.url}}" alt="фотография">
+  </div>
+  {% endfor %}
+</body>
+</html>

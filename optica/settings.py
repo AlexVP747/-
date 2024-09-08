@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'imagekit',
     'login',
     'main', 
     'django.contrib.admin',
@@ -130,3 +131,9 @@ LOGIN_URL = '/login/login'
 LOGIN_REDIRECT_URL = '/login/profile'
 
 LOGOUT_REDIRECT_URL = '/'
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media' 
+
+
