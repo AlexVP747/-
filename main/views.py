@@ -9,6 +9,15 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
+def lensess(request):
+    return render(request, 'main/lensess.html')
+
+def news(request):
+    return render(request, 'main/news.html')
+
+def portfolio(request):
+    return render(request, 'main/portfolio.html')
+
 def review(request):
     rev=Review.objects.all()
     context={
