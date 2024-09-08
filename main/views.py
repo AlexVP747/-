@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from login.models import Review
+from main.forms import ReviewForm
 
 
 def index(request):
@@ -11,6 +12,17 @@ def about(request):
 def review(request):
     rev=Review.objects.all()
     context={
-        "list":rev
+        "list":rev, 
+        "form":ReviewForm()
     }
     return render(request, 'main/review.html', context)
+
+def addreview(request):
+    if request.method=='POST':
+        form=ReviewForm(request.POST)
+        if form.is_valid():
+            obj=Review(**form.cleaned_data) # ** - создает именованные аргументы
+            obj.answer=1 # заплатка, позже исправить
+            obj.user=request.user 
+            obj.save()
+    return HttpResponseRedirect('/review')       

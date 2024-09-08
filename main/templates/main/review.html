@@ -14,5 +14,23 @@
   <img src="{{review.foto.url}}" alt="фотография">
   </div>
   {% endfor %}
+
+  {% if user.is_authenticated %}
+  <form method="POST" action='/addreview'>
+    {% csrf_token %}
+  {{form}}  
+  <input type="submit" value="сохранить">
+  </form>
+
+
+  {% else %}
+  <h3>Чтобы оставить отзыв зарегистрируйтесь или войдите в систему</h3>
+  <a class="register" href="/login/">регистрация</a>
+  <a class="open" href="/login/login">войти</a>
+  {% endif %}
+
+
+
+
 </body>
 </html>
