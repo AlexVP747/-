@@ -18,6 +18,11 @@ def news(request):
 def portfolio(request):
     return render(request, 'main/portfolio.html')
 
+def frame(request):
+    return render(request, 'main/frame.html')
+
+
+
 def review(request):
     rev=Review.objects.all()
     context={

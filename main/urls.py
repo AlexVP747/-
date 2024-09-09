@@ -9,6 +9,7 @@ urlpatterns = [
     path('addreview', views.addreview),
     path('lensess', views.lensess),
     path('news', views.news),
-    path('portfolio', views.portfolio)
+    path('portfolio', views.portfolio),
+    path('frame', views.frame)
 
 ]
