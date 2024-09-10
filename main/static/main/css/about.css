@@ -11,7 +11,7 @@ a {
 
 body{
   padding-top: 50px;
-  background-image: url("/static/main/img/abbg.png"); 
+  background-image: url("/static/main/img/abbg.jpg"); 
   background-size: cover;
   display: flex;
   flex-direction: column;
