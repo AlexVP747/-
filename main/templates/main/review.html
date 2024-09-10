@@ -18,7 +18,9 @@
   {% if user.is_authenticated %}
   <form method="POST" action='/addreview' enctype="multipart/form-data">
     {% csrf_token %}
-  {{form}}  
+    <div class="formcontent">
+      <p>загрузка...</p>
+    </div>
   <input type="submit" value="сохранить">
   </form>
 
@@ -31,6 +33,6 @@
 
 
 
-
+  <script src="/static/main/js/review.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponseRedirect
 from login.models import Review
 from main.forms import ReviewForm
+from django.http import HttpResponse
 
 
 def index(request):
@@ -39,4 +40,9 @@ def addreview(request):
             obj.answer=1 # заплатка, позже исправить
             obj.user=request.user 
             obj.save()
-    return HttpResponseRedirect('/review')       
+            return HttpResponseRedirect('/review')
+        else:
+            return HttpResponse(form.as_p() )
+    else:
+        return HttpResponse (ReviewForm().as_p()   )
+          
