@@ -16,7 +16,7 @@
   {% endfor %}
 
   {% if user.is_authenticated %}
-  <form method="POST" action='/addreview'>
+  <form method="POST" action='/addreview' enctype="multipart/form-data">
     {% csrf_token %}
   {{form}}  
   <input type="submit" value="сохранить">

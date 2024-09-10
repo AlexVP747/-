@@ -33,7 +33,7 @@ def review(request):
 
 def addreview(request):
     if request.method=='POST':
-        form=ReviewForm(request.POST)
+        form=ReviewForm(request.POST, request.FILES)
         if form.is_valid():
             obj=Review(**form.cleaned_data) # ** - создает именованные аргументы
             obj.answer=1 # заплатка, позже исправить
