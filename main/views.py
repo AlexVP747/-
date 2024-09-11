@@ -22,6 +22,9 @@ def portfolio(request):
 def frame(request):
     return render(request, 'main/frame.html')
 
+def organizations(request):
+    return render(request, 'main/organizations.html')
+
 
 
 def review(request):

@@ -10,6 +10,7 @@ urlpatterns = [
     path('lensess', views.lensess),
     path('news', views.news),
     path('portfolio', views.portfolio),
-    path('frame', views.frame)
+    path('frame', views.frame),
+    path('organizations', views.organizations)
 
 ]
