@@ -67,6 +67,11 @@ body{
   background-size: cover;
 }
 
+#organizations{
+  background-image: url("/static/main/img/orbg.jpg");
+  background-size: cover;
+}
+
 .swiper-slide{
   display: flex !important;
   justify-content: center;
