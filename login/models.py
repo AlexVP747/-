@@ -4,7 +4,7 @@ from imagekit.processors import ResizeToFit
 from django.contrib.auth.models import User
 
 class Review(models.Model):
-  originalfoto=models.ImageField(upload_to='image')
+  originalfoto=models.ImageField(upload_to='image', verbose_name="своё фото")
   foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(200,200)])
   text=models.TextField(verbose_name='текст')
   user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='reviews', verbose_name='пользователь')
@@ -18,3 +18,4 @@ class Review(models.Model):
 
   def __str__(self) -> str:
     return "отзыв" + str(self.id)
+

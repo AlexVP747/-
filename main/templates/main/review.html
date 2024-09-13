@@ -12,6 +12,14 @@
   <h2>{{review.user.username}}</h2>
   <p>{{review.text}}</p>
   <img src="{{review.foto.url}}" alt="фотография">
+  {% if user.username == review.user.username %}
+  <div class="control">
+     <form action="/deletreview/{{review.id}}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="удалить"></form>
+  </div>
+  {% endif %}
+  
   </div>
   {% endfor %}
 

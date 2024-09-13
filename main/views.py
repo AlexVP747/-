@@ -48,4 +48,12 @@ def addreview(request):
             return HttpResponse(form.as_p() )
     else:
         return HttpResponse (ReviewForm().as_p()   )
+    
+def deletreview(request, idobj):
+    if request.method=='POST':
+        Review.objects.get(id=idobj).delete()
+    return HttpResponseRedirect('/review')
+        
+        
+    
           
