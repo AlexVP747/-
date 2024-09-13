@@ -1,7 +1,8 @@
 from django.shortcuts import render, HttpResponseRedirect
-from login.models import Review
+from login.models import Review, Portfolio
 from main.forms import ReviewForm
 from django.http import HttpResponse
+
 
 
 def index(request):
@@ -17,7 +18,11 @@ def news(request):
     return render(request, 'main/news.html')
 
 def portfolio(request):
-    return render(request, 'main/portfolio.html')
+    portfolio=Portfolio.objects.all()
+    context={
+        "list":portfolio, 
+    }
+    return render(request, 'main/portfolio.html', context)
 
 def frame(request):
     return render(request, 'main/frame.html')

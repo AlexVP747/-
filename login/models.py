@@ -19,3 +19,14 @@ class Review(models.Model):
   def __str__(self) -> str:
     return "отзыв" + str(self.id)
 
+class Portfolio(models.Model):
+  originalfoto=models.ImageField(upload_to='image', verbose_name="фото")
+  foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(200,200)])
+  text=models.TextField(verbose_name='описание')
+
+  class Meta:
+   verbose_name="наша работа"
+   verbose_name_plural="наши работы"
+   
+  def __str__(self) -> str:
+    return "работа " + str(self.id)

@@ -9,5 +9,16 @@
 <body>
   <h1>наши работы</h1>
   <p></p>
+
+  {% for portfolio in list %}
+  <div class='portfolio'>
+  <img src="{{portfolio.foto.url}}" alt="фотография">
+  <p>{{portfolio.text}}</p>
+  </div>
+  {% endfor %}
+
+
+
+
 </body>
 </html>
