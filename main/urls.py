@@ -7,7 +7,6 @@ urlpatterns = [
     path('about', views.about),
     path('review', views.review),
     path('deletreview/<int:idobj>', views.deletreview),
-
     path('addreview', views.addreview),
     path('lensess', views.lensess),
     path('news', views.news),
