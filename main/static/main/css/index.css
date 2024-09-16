@@ -96,5 +96,6 @@
 .register{
   border: solid rgb(61, 88, 239);
   border-radius: 15px;
+  border-bottom: 50px;
   
 }
