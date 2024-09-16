@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
+  // Необязательные параметры
   // direction: 'vertical',
   loop: true,
   effect: 'coverflow',
@@ -12,12 +12,12 @@ const swiper = new Swiper('.swiper', {
 
   slidesPerView: 3,
 
-  // If we need pagination
+  // Если нам нужна разбивка на страницы
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
+  // Навигационные стрелки
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
