@@ -9,12 +9,12 @@
 }
 @font-face {
 	font-family: kamerik-3d;
-	src: url(../main/static/main/fonts/kamerik205-heavy.woff2);
+	src: url(../static/main/fonts/kamerik205-heavy.woff2);
 	font-weight: 900;
 }
 @font-face {
 	font-family: merriweather-italic-3d;
-	src: url(../main/static/main/fonts/merriweather-regular-italic.woff2);
+	src: url(../static/main/fonts/merriweather-regular-italic.woff2);
 }
 body {
 	background-color: #000;
