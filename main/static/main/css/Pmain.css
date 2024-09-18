@@ -88,7 +88,7 @@ body {
 	font-size: calc(var(--index) * .73);
 	line-height: 3;
 }
-.button-start {
+/* .button-start {
 	font-family: Arial;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -102,7 +102,23 @@ body {
 	outline: none;
 	cursor: pointer;
 	margin-top: calc(var(--index) * 2.5);
-}
+} */
 .layer-4, .layer-5, .layer-6 {
 	pointer-events: none;
+}
+.auth{
+	font-family: Arial;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .71);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	background-color: transparent;
+	color: #fff;
+	border-radius: 10em;
+	border: rgb(255 255 255 / .4) 3px solid;
+	outline: none;
+	cursor: pointer;
+	margin-top: calc(var(--index) * 2.5);
+
 }

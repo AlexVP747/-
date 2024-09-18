@@ -46,6 +46,19 @@
           </div>
 					{% comment %} <h1>Мобильная оптика <span>в наше время</span></h1> {% endcomment %}
 					<div class="hero-content__p">оригинальный подход  к решению задач ‘лучшие линзы’</div>
+          <div class='auth'>
+            {% if user.is_authenticated %}
+            {{user.username}}
+            <form action="/login/logout" method='POST'>
+              {% csrf_token %}
+              <input type="submit" value="Выйти">
+            </form>
+            {% else %}
+            <a class="register" href="/login/">регистрация</a>
+            <a class="open" href="/login/login">войти</a>
+            {% endif %}
+          </div>
+
 				</div>
 			</div>
 			<div class="layers__item layer-4">
@@ -55,19 +68,6 @@
       <div class="layers__item layer-6" style="background-image: url(/static/main/img/Pimg/layer-6.png);"></div>
 		</div>
 	</section>
-  <div class='auth'>
-    {% if user.is_authenticated %}
-    {{user.username}}
-    <form action="/login/logout" method='POST'>
-      {% csrf_token %}
-      <input type="submit" value="Выйти">
-    </form>
-    {% else %}
-    <a class="register" href="/login/">регистрация</a>
-    <a class="open" href="/login/login">войти</a>
-    {% endif %}
-  </div>
-
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/static/main/js/index.js"></script>
