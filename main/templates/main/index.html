@@ -14,30 +14,7 @@
   </head>
 <body>
      
-<!-- Основной контейнер слайдера -->
-<div class="swiper">
-  <!-- Дополнительная требуемая оболочка -->
-  <div class="swiper-wrapper">
-    <!-- Слайды -->
-    <a class="swiper-slide" id="frame" href='/frame'>оправы</a>
-    <a class="swiper-slide" id="about" href='/about'>о нас</a>
-    <a class="swiper-slide" id="lensess" href='/lensess'>линзы</a>
-    <a class="swiper-slide" id="news" href='/news'>новости оптики</a>
-    <a class="swiper-slide" id="portfolio" href='/portfolio'>наши работы</a>
-    <a class="swiper-slide" id="reviews" href='/review'>отзывы</a>
-    <a class="swiper-slide" id="organizations" href='/organizations'>организациям</a>
-    
-  </div>
-  <!-- если нам нужна разбивка на страницы -->
-  <div class="swiper-pagination"></div>
 
-  <!-- если нам нужны навигационные кнопки -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- Если нам нужна полоса прокрутки -->
-  {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
-</div>
 
 	<section class="layers">
 		<div class="layers__container">
@@ -46,7 +23,28 @@
       <div class="layers__item layer-2" style="background-image: url(/static/main/img/Pimg/layer-2.png);"></div>
 			<div class="layers__item layer-3">
 				<div class="hero-content">
-					<h1>Мобильная оптика <span>в наше время</span></h1>
+          <!-- Основной контейнер слайдера -->
+          <div class="swiper">
+            <!-- Дополнительная требуемая оболочка -->
+            <div class="swiper-wrapper">
+              <!-- Слайды -->
+              <a class="swiper-slide" id="frame" href='/frame'>оправы</a>
+              <a class="swiper-slide" id="about" href='/about'>о нас</a>
+              <a class="swiper-slide" id="lensess" href='/lensess'>линзы</a>
+              <a class="swiper-slide" id="news" href='/news'>новости оптики</a>
+              <a class="swiper-slide" id="portfolio" href='/portfolio'>наши работы</a>
+              <a class="swiper-slide" id="reviews" href='/review'>отзывы</a>
+              <a class="swiper-slide" id="organizations" href='/organizations'>организациям</a>
+            </div>
+            <!-- если нам нужна разбивка на страницы -->
+            <div class="swiper-pagination"></div>
+            <!-- если нам нужны навигационные кнопки -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Если нам нужна полоса прокрутки -->
+            {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
+          </div>
+					{% comment %} <h1>Мобильная оптика <span>в наше время</span></h1> {% endcomment %}
 					<div class="hero-content__p">оригинальный подход  к решению задач ‘лучшие линзы’</div>
 				</div>
 			</div>
