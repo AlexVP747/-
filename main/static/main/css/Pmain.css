@@ -14,7 +14,7 @@
 }
 @font-face {
 	font-family: merriweather-italic-3d;
-	src: url("../static/main/fonts/merriweather-regular-italic.woff2");
+	src: url("/static/main/fonts/merriweather-regular-italic.woff2");
 }
 body {
 	background-color: #000;
@@ -74,7 +74,7 @@ body {
 	font-size: calc(var(--index) * 2.9);
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: calc(var(--index) * -.15);
+	/* letter-spacing: calc(var(--index) * -.15); */
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 5.5);
 }

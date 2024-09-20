@@ -4,10 +4,14 @@
   box-sizing: border-box;
 } */
 
-/* a {
-  color: black;
+a {
+  color: white;
   text-decoration: none;
-} */
+  transition: 200ms;
+}
+a:hover{
+  color: gray;
+}
 
 /* body{
   padding-top: 50px;
