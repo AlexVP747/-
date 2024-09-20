@@ -19,5 +19,9 @@ body{
 }
 .video-len{
 width: 400px;
-
+border-radius: 10px;
+  border: rgb(181, 181, 235) 5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
 }

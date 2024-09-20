@@ -1,10 +1,4 @@
-/* *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
-
-a {
+a{
   color: white;
   text-decoration: none;
   transition: 200ms;
@@ -12,18 +6,7 @@ a {
 a:hover{
   color: gray;
 }
-
-/* body{
-  padding-top: 50px;
-  background-image: url("/static/main/img/bg.jpg"); 
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 .swiper{
-  /* background-color: aliceblue; */
   margin-top: 100px;
   width: 1200px;
   height: 300px;
@@ -32,57 +15,45 @@ a:hover{
   background-image: url("/static/main/img/about.png");
   background-size: cover;
 }
-
 #frame{
   background-image: url("/static/main/img/frame.png");
   background-size: cover;
 }
-
 #news{
   background-image: url("/static/main/img/news.jpg");
   background-size: cover;
 }
-
 #lensess{
   background-image: url("/static/main/img/lensess.jpg");
   background-size: cover;
 }
-
 #portfolio{
   background-image: url("/static/main/img/portfolio.png");
   background-size: cover;
 }
-
 #reviews{
   background-image: url("/static/main/img/OS.jpg");
   background-size: cover;
 }
-
 #organizations{
   background-image: url("/static/main/img/orbg.jpg");
   background-size: cover;
 }
-
 .swiper-slide{
   display: flex !important;
   justify-content: center;
   font-size: 30px;
-  /* opacity: 0.5; */
+  border-radius: 10px;
+  border: rgb(181, 181, 235) 5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
 }
-
-/* .auth{
-  /* position: fixed; */
-  /* display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-} */ 
-
 @media(max-width:1250px){
   .swiper{
     width: 100%;
   }
 }
-
 @media(max-width:850px){
   .swiper{
     height: 150px;
@@ -92,8 +63,3 @@ a:hover{
     font-size: 20px;
   }
 }
-
-/* .register{
-  
-  
-} */
