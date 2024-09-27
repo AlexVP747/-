@@ -11,6 +11,12 @@ a {
 .logo {
   margin-top: -20px;
   width: 150px;
+
+@font-face {
+  font-family: pizza-hut;
+  src: url(/main/static/main/fonts/pizza-hut.otf);
+  font-weight: 900;
+}
  
 }
 body{
@@ -20,4 +26,21 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.ram-block{
+  margin-top: 200px;
+  padding: 15px;
+  width: 800px;
+  border: solid;
+  border-radius: 10px;
+  border: rgb(181, 181, 235) 5px solid;
+border-radius: 10px;
+  border: rgb(181, 181, 235) 5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  font-family: pizza-hut;
+}
+.ocean{
+  color: #070bec;
 }
