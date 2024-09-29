@@ -33,7 +33,7 @@ body{
 }
 .block-a{
   display: flex;  flex-direction: row;  justify-content: space-around; 
-  margin: 50px;
+  margin: 30px;
   padding: 50px;
 }
 .block-b{
