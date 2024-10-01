@@ -48,7 +48,7 @@
 					<div class="hero-content__p"><p>лучшее решение нашего времени</p></div>
           <div class='auth'>
             {% if user.is_authenticated %}
-            {{user.username}}
+            <a href="/login/profile">{{user.username}}</a>
             <form action="/login/logout" method='POST'>
               {% csrf_token %}
               <input type="submit" value="Выйти">

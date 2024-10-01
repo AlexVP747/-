@@ -3,10 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/login/css/profile.css">
   <title>Личный кабинет</title>
 </head>
 <body>
-  имя пользователя:{{user.username}}
-  <a href="/">Вернуться на главную страницу</a>
+имя пользователя:{{user.username}}
+  {% if user.Profile.foto  %}
+  <img src="{{user.Profile.foto}}" alt="фото пользователя">
+  {% else %}
+  <img class="anonim" src="/static/login/img/anonim.jpg" alt="аватарка">
+  {% endif %}
+
+<h3>имя: {{user.Profile.firstname}}</h3>
+<h3>фамилия: {{user.Profile.laststname}}</h3>
+<h3>дата рождения: {{user.Profile.date}}</h3>
+
+<a href="/">Вернуться на главную страницу</a>
 </body>
 </html>
