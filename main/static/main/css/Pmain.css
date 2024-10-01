@@ -9,7 +9,7 @@
 }
 @font-face {
 	font-family: pizza-hut;
-	src: url("/main/static/main/fonts/pizza-hut.otf");
+	src: url("/static/main/fonts/pizza-hut.otf");
 	font-weight: 900;
 }
 /* @font-face {
