@@ -9,7 +9,7 @@ urlpatterns = [
     path('deletreview/<int:idobj>', views.deletreview),
     path('addreview', views.addreview),
     path('lensess', views.lensess),
-    path('news', views.news),
+    path('sale', views.sale),
     path('portfolio', views.portfolio),
     path('frame', views.frame),
     path('organizations', views.organizations)

@@ -19,8 +19,8 @@ a:hover{
   background-image: url("/static/main/img/frame.png");
   background-size: cover;
 }
-#news{
-  background-image: url("/static/main/img/news.jpg");
+#sale{
+  background-image: url("/static/main/img/sale.jpg");
   background-size: cover;
 }
 #lensess{

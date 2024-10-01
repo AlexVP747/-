@@ -14,8 +14,8 @@ def about(request):
 def lensess(request):
     return render(request, 'main/lensess.html')
 
-def news(request):
-    return render(request, 'main/news.html')
+def sale(request):
+    return render(request, 'main/sale.html')
 
 def portfolio(request):
     portfolio=Portfolio.objects.all()
