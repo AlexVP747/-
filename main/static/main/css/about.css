@@ -13,8 +13,8 @@ a {
   width: 150px;
 }
 @font-face {
-  font-family: FONT_Regular;
-  src: url("/static/main/fonts/FONT_Regular.ttf");
+  font-family: Angeme-Regular;
+  src: url("/static/main/fonts/Angeme-Regular.ttf");
   font-weight: 900;
 }
  
@@ -39,10 +39,10 @@ border-radius: 10px;
   -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   font-size: 20px;
-  font-family: FONT_Regular;
+  font-family: Angeme-Regular;
 }
 .text-a{
-  font-family: FONT_Regular;
+  font-family: Angeme-Regular;
 }
 
 .ocean{
