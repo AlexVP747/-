@@ -5,7 +5,7 @@
 }
 
 a {
-  color: black;
+  color: rgb(63, 12, 171);
   text-decoration: none;
 }
 .logo {
@@ -13,8 +13,8 @@ a {
   width: 150px;
 }
 @font-face {
-  font-family: Angeme-Regular;
-  src: url("/static/main/fonts/Angeme-Regular.ttf");
+  font-family: SemiBoldItalic;
+  src: url("/static/main/fonts/SemiBoldItalic.ttf");
   font-weight: 900;
 }
  
@@ -27,7 +27,7 @@ body{
   align-items: center;
 }
 .ram-block{
-  background-color: azure;
+  background-color: rgba(234, 238, 241, 0.6);
   margin-top: 200px;
   padding: 15px;
   width: 800px;
@@ -40,10 +40,10 @@ border-radius: 10px;
   -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   font-size: 20px;
-  font-family: Angeme-Regular;
+  font-family: SemiBoldItalic;
 }
 .text-a{
-  font-family: Angeme-Regular;
+  font-family: SemiBoldItalic;
 }
 
 .ocean{
