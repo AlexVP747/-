@@ -12,10 +12,16 @@
 	src: url("/static/main/fonts/SemiBoldItalic.ttf");
 	font-weight: 900;
 }
+@font-face {
+	font-family: ExtraBold;
+	src: url("/static/main/fonts/ExtraBold.ttf");
+	font-weight: 600;
+}
 body {
 	background-color: #000;
 	color: #fff;
-	font-family: SemiBoldItalic;
+	font-family: Arial;
+	font-weight: 600;
 }
 .logo {
 	 --logo-size: calc(var(--index) * 7.8);
