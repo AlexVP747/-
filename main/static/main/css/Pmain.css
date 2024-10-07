@@ -8,18 +8,14 @@
 	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 }
 @font-face {
-	font-family: pizza-hut;
-	src: url("/static/main/fonts/pizza-hut.otf");
+	font-family: SemiBoldItalic;
+	src: url("/static/main/fonts/SemiBoldItalic.ttf");
 	font-weight: 900;
 }
-/* @font-face {
-	font-family: merriweather-italic-3d;
-	src: url("/static/main/fonts/merriweather-regular-italic.woff2");
-} */
 body {
 	background-color: #000;
 	color: #fff;
-	font-family: pizza-hut;
+	font-family: SemiBoldItalic;
 }
 .logo {
 	 --logo-size: calc(var(--index) * 7.8);
@@ -78,7 +74,7 @@ body {
 }
 .hero-content__p {
 	text-transform: none;
-	font-family: pizza-hut;
+	font-family: SemiBoldItalic;
 	letter-spacing: normal;
 	font-size: calc(var(--index) * .73);
 	line-height: 3;
