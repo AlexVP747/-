@@ -19,7 +19,7 @@ a {
 }
 body{
   padding-top: 50px;
-  background-image: url("/static/main/img/orbg.jpg"); 
+  background-image: url("/static/main/img/orgbg.jpeg"); 
   background-size: cover;
   display: flex;
   flex-direction: column;
