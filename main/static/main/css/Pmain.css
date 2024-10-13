@@ -89,6 +89,10 @@ body {
 	pointer-events: none;
 }
 .auth{
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
 	font-family: Arial;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -102,4 +106,25 @@ body {
 	outline: none;
 	cursor: pointer;
 	margin-top: calc(var(--index) * 2.5);
+	width: 500px;
+	margin: auto;
+}
+.exit{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .71);
+	font-weight: 600;
+}
+.exit:hover{
+	color:  rgb(255 255 255 / .4);
+}
+
+.namber-top{
+	margin-top: 30px;
+}
+.namber-phone:hover{
+	color: blue;
 }

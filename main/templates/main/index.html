@@ -41,14 +41,14 @@
             <!-- Если нам нужна полоса прокрутки, включи ниже-->
             {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
           </div>
-					<h3>+7-926-444-33-74</h3>
+					<h3 class="namber-top"><a class="namber-phone" href="tel:+79264443374">+7-926-444-33-74</a></h3>
 					<div class="hero-content__p"><p>лучшее решение нашего времени</p></div>
           <div class='auth'>
             {% if user.is_authenticated %}
             <a href="/login/profile">{{user.username}}</a>
             <form action="/login/logout" method='POST'>
               {% csrf_token %}
-              <input type="submit" value="Выйти">
+              <input class="exit" type="submit" value="Выйти">
             </form>
             {% else %}
             <a class="register" href="/login/">регистрация</a>
