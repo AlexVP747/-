@@ -10,11 +10,11 @@ a {
 }
 .logo {
   margin-top: -20px;
-  width: 150px;
+  width: 230px;
 }
 @font-face {
-  font-family: SemiBoldItalic;
-  src: url("/static/main/fonts/SemiBoldItalic.ttf");
+  font-family: PTAstra;
+  src: url("/static/main/fonts/PTAstraSerifBold.ttf"); 
   font-weight: 900;
 }
  
@@ -30,13 +30,14 @@ body{
 .uptext{
   text-align: center;
   color: rgb(70, 8, 214);
+  font-size: 23px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
 }
 
 .ram-block{
   background-color: rgba(234, 238, 241, 0.9);
-  margin-top: 200px;
-  padding: 15px;
+  margin-top: 80px;
   width: 800px;
   border: solid;
   border-radius: 10px;
@@ -46,13 +47,11 @@ border-radius: 10px;
   -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
-  font-size: 20px;
-  font-family: SemiBoldItalic;
+  font-size: 23px;
+  font-family: PTAstra;
   text-align:justify;
   text-indent: 25px; 
-}
-.text-a{
-  font-family: SemiBoldItalic;
+  padding: 10px 70px 10px 70px;
 }
 
 .ocean{
