@@ -82,7 +82,7 @@ body {
 	text-transform: none;
 	font-family: SemiBoldItalic;
 	letter-spacing: normal;
-	font-size: calc(var(--index) * .73);
+	font-size: calc(var(--index) * 2);
 	line-height: 3;
 }
 .layer-4, .layer-5, .layer-6 {

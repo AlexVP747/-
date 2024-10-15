@@ -10,7 +10,7 @@ a {
 }
 .logo {
   margin-top: -20px;
-  width: 150px;
+  width: 230px;
 }
 @font-face {
   font-family: Astra;
@@ -27,12 +27,13 @@ body{
 }
 .uptext{
   text-align: center;
-  color: rgb(70, 8, 214);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  color: rgb(24, 2, 74);
+  text-shadow: 2px 2px 5px rgba(237, 244, 252, 0.4);
+  margin-top: 50px;
 }
 .ram-block{
   background-color: rgba(234, 238, 241, 0.6);
-  margin-top: 200px;
+  margin-top: 110px;
   padding: 15px;
   width: 800px;
   border: solid;
@@ -47,4 +48,5 @@ border-radius: 10px;
   font-family: Astra;
   text-align:justify;
   text-indent: 25px; 
+  padding: 10px 70px 10px 70px ;
 }
