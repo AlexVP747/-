@@ -17,3 +17,14 @@ body{
   flex-direction: column;
   align-items: center;
 }
+.portfolio{
+  margin: 100px;
+  
+}
+.text{
+  text-indent: 10px;
+  font-size: 23px;
+}
+.foto{
+  width: 550px;
+}
