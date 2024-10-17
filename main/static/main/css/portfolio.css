@@ -17,14 +17,34 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
 .portfolio{
   margin: 100px;
-  
 }
+
 .text{
   text-indent: 10px;
   font-size: 23px;
+  height: 60px;
+  background-color: darkgray;
+  border-radius: 5px;
+  border: rgb(44, 44, 151) 5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
 }
+
 .foto{
-  width: 550px;
+  width: 800px;
+  border-radius: 5px;
+  border: rgb(44, 44, 151) 5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+}
+
+main{
+  background-color: rgba(255, 255, 255, .3);
+  width: 1000px;
+  margin-top: 30px;
 }
