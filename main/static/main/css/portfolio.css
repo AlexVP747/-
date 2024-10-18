@@ -26,18 +26,18 @@ body{
   text-indent: 10px;
   font-size: 23px;
   height: 60px;
-  background-color: darkgray;
+  background-color: rgb(156, 245, 248);
   border-radius: 5px;
-  border: rgb(44, 44, 151) 5px solid;
+  border: rgb(71, 71, 203) 5px solid;
   -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
 }
 
 .foto{
-  width: 800px;
+  width: 100%;
   border-radius: 5px;
-  border: rgb(44, 44, 151) 5px solid;
+  border: rgb(71, 71, 203) 5px solid;
   -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);

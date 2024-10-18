@@ -23,7 +23,7 @@ class Review(models.Model):
 
 class Portfolio(models.Model):
   originalfoto=models.ImageField(upload_to='image', verbose_name="фото")
-  foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(200,200)])
+  foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(800,800)])
   text=models.TextField(verbose_name='описание')
 
   class Meta:
