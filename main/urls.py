@@ -12,6 +12,8 @@ urlpatterns = [
     path('sale', views.sale),
     path('portfolio', views.portfolio),
     path('frame', views.frame),
-    path('organizations', views.organizations)
+    path('organizations', views.organizations),
+    path('pdf/<int:id>', views.pdforder)
+
 
 ]

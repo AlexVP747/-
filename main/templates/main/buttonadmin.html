@@ -1,0 +1,7 @@
+{% extends "admin/change_form.html" %}
+{% block submit_buttons_bottom %}
+{{ block.super }}
+{% if custom_button %}
+    <a href="{% url 'admin:pdf' original.id %}" class="button">конвертировать в pdf</a>
+{% endif %}
+{% endblock%}

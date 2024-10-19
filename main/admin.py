@@ -1,4 +1,24 @@
 from django.contrib import admin
+from django.http import HttpRequest
+from django.http.response import HttpResponse
 from .models import Order
+from django.urls import path
+from .views import pdforder
+from django.shortcuts import redirect
 # Register your models here.
-admin.site.register(Order)
+
+class Orderadmin(admin.ModelAdmin):
+  change_form_template="main/buttonadmin.html"
+  def get_urls(self):
+    urls=super().get_urls()
+    customurls=[path("<int:id>/pdf/",self.admin_site.admin_view(self.pdf),name="pdf")]
+    return urls+customurls
+  def change_view(self, request, object_id, form_url='', extra_context=None) -> HttpResponse:
+    extra_context=extra_context or {}
+    extra_context["custom_button"]=True
+    return super().change_view(request, object_id, form_url, extra_context)  
+  def pdf(self, request, id):
+    obj=self.get_object(request,id)
+    return redirect("pdf", obj.pk)
+admin.site.register(Order, Orderadmin)
+   
