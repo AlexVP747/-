@@ -80,9 +80,21 @@ def pdforder(request, id):
 
     # Записываем информацию о книге в PDF
     p.drawString(100, height - 100, f"ФИО: {order.name}")
-    p.drawString(100, height - 120, f"телефон: {order.phone}")
-    p.drawString(100, height - 140, f"оправа: {order.frame}")
-    p.drawString(100, height - 160, f"линзы: {order.lenses}")
+    p.drawString(100, height - 120, f"Телефон: {order.phone}")
+    p.drawString(100, height - 140, f"Оправа: {order.frame}")
+    p.drawString(100, height - 160, f"Линзы: {order.lenses}")
+    p.drawString(100, height - 180, f"Работа мастера: {order.price_master}")
+    p.drawString(100, height - 200, f"Скидка: {order.sale}")
+    p.drawString(100, height - 220, f"Итого: {order.total}")
+    p.drawString(100, height - 240, f"дата приёма заказа: {order.date}")
+    p.drawString(100, height - 260, f"дата изготовления заказа: {order.date_productione}")
+    p.drawString(100, height - 280, f"DDP: {order.lenses}")
+    p.drawString(100, height - 300, f"OD_SPH: {order.OD_SPH}")
+    p.drawString(100, height - 320, f"OD_CYL: {order.OD_CYL}")
+    p.drawString(100, height - 340, f"OD_AX: {order.OD_AX}")
+    p.drawString(100, height - 360, f"OS_SPH: {order.OS_SPH}")
+    p.drawString(100, height - 380, f"OS_CYL: {order.OS_CYL}")
+    p.drawString(100, height - 400, f"OS_AX: {order.OS_AX}")
    
 
     p.setTitle(titleOrder)
