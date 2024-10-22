@@ -13,7 +13,7 @@ urlpatterns = [
     path('portfolio', views.portfolio),
     path('frame', views.frame),
     path('organizations', views.organizations),
-    path('pdf/<int:id>', views.pdforder)
+    path('pdf/<int:id>', views.pdforder, name="pdfconvector")
 
 
 ]

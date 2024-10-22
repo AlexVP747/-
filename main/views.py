@@ -73,12 +73,14 @@ def pdforder(request, id):
     # Создаем объект Canvas для генерации PDF
     p = canvas.Canvas(response, pagesize=A4)
     width, height = A4
+    logo="main/static/main/img/logo.png"
 
     # Убедись, что у тебя есть файл Times New Roman.ttf в доступной директории
     pdfmetrics.registerFont(TTFont('TimesNewRoman', 'main/static/main/fonts/timesnewromanpsmt.ttf'))
     p.setFont('TimesNewRoman', 12)
 
     # Записываем информацию о книге в PDF
+    p.drawImage(logo,(width-50)/2, height - 50, width=100, height=50)
     p.drawString(100, height - 100, f"ФИО: {order.name}")
     p.drawString(100, height - 120, f"Телефон: {order.phone}")
     p.drawString(100, height - 140, f"Оправа: {order.frame}")
