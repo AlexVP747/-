@@ -30,7 +30,7 @@ body{
   padding-top: 50px;
   background-image: url("/static/main/img/frbg.jpg"); 
   background-size: cover;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
