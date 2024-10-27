@@ -7,11 +7,16 @@ from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+import requests
+from bs4 import BeautifulSoup
 
-
+url="http://www.cbr.ru/scripts/XML_dynamic.asp?VAL_NM_RQ=R01235"
 
 def index(request):
-    return render(request, 'main/index.html')
+    response=requests.get(url)
+    parser=BeautifulSoup(response.text, "xml")
+    usamoney=parser.find(class_="_dollar").find_next_sibling().text 
+    return render(request, 'main/index.html', context={"usa":usamoney})
 
 def about(request):
     return render(request, 'main/about.html')
