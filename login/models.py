@@ -47,3 +47,15 @@ def createProfile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def saveProfile(sender, instance, **kwargs):
   instance.Profile.save()
+
+  # class Sale(models.Model):
+  #   originalfoto=models.ImageField(upload_to='image', verbose_name="фото")
+  #   foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(800,800)])
+  #   text=models.TextField(verbose_name=' акции')
+
+  #   class Meta:
+  #     verbose_name="наша акция"
+  #     verbose_name_plural="наши акции"
+   
+  # def __str__(self) -> str:
+  #   return "акция" + str(self.id)
