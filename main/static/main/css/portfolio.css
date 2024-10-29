@@ -27,8 +27,9 @@ body{
 }
 
 .text{
+  font-family: Arial, Helvetica, sans-serif;
   text-indent: 10px;
-  font-size: 23px;
+  font-size: 18px;
   height: 60px;
   background-color: rgb(241, 245, 245);
   border-radius: 5px;
