@@ -5,6 +5,9 @@ from .models import Order
 from django.urls import path
 from .views import pdforder
 from django.shortcuts import redirect
+from main.models import Portfolio
+from main.models import Sale
+
 # Register your models here.
 
 class Orderadmin(admin.ModelAdmin):
@@ -22,4 +25,7 @@ class Orderadmin(admin.ModelAdmin):
     print(obj)
     return redirect("pdfconvector", obj.pk)
 admin.site.register(Order, Orderadmin)
+
+admin.site.register(Portfolio)
+admin.site.register(Sale)
    

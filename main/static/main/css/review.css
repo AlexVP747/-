@@ -17,3 +17,7 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
+textarea{
+  background-color: aqua;
+}

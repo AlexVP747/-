@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponseRedirect
-from login.models import Review, Portfolio
+from login.models import Review
+from main.models import Portfolio, Sale 
 from main.forms import ReviewForm
 from django.http import HttpResponse
 from main.models import Order
@@ -25,7 +26,11 @@ def lensess(request):
     return render(request, 'main/lensess.html')
 
 def sale(request):
-    return render(request, 'main/sale.html')
+    sale=Sale.objects.all()
+    context={
+        "list":sale, 
+    }
+    return render(request, 'main/sale.html', context)
 
 def portfolio(request):
     portfolio=Portfolio.objects.all()
