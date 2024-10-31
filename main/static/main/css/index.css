@@ -63,3 +63,13 @@ a:hover{
     font-size: 20px;
   }
 }
+.H5{
+  color: blue;
+  display: flex;
+  
+}
+.money{
+  display: flex; justify-content: end;
+  margin-right: 100px;
+  margin-top: 20px;
+}
