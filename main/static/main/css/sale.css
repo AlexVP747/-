@@ -3,12 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-a {
+a{
   color: black;
   text-decoration: none;
 }
-
 body{
   padding-top: 50px;
   background-image: url("/static/main/img/nwbg.png"); 
@@ -16,4 +14,47 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main{
+  background-color: rgba(255, 255, 255, .5);
+  width: 1000px;
+  margin-top: 30px;
+}
+.text-l{
+  display: flex;  flex-direction: column;  justify-content: column; align-items: center;
+  color: #e4e1ef;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #800a6a;
+  width: 500px;
+  border-radius: 10px;
+  border: rgb(181, 181, 235) 1px solid;
+border-radius: 10px;
+  border: rgb(181, 181, 235) 1px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+}
+.sale{
+  margin: 100px;
+}
+.foto{
+  width: 100%;
+  border-radius: 5px;
+  border: rgb(244, 244, 245) 0.5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+}
+.text{
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 10px;
+  font-size: 18px;
+  height: 60px;
+  background-color: rgb(241, 245, 245);
+  border-radius: 5px;
+  border: rgb(244, 244, 245) 0.5px solid;
+  -webkit-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
+  box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
 }
