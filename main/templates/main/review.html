@@ -9,9 +9,9 @@
 <body>
   {% for review in list %}
   <div class='review'>
-  <h2>{{review.user.username}}</h2>
-  <p>{{review.text}}</p>
-  <img src="{{review.foto.url}}" alt="фотография">
+    <img src="{{review.foto.url}}" alt="фотография">  
+    <p>{{review.text}}</p>
+    <h3>{{review.user.username}}</h3>
   {% if user.username == review.user.username %}
   <div class="control">
      <form action="/deletreview/{{review.id}}" method="POST">
