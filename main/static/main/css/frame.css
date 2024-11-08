@@ -28,9 +28,7 @@ border-radius: 10px;
 }
 body{
   padding-top: 50px;
-  background-image: url("/static/main/img/frbg.jpg"); 
+  /* background-image: url("/static/main/img/frbg.jpg");  */
   background-size: cover;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+
 }
