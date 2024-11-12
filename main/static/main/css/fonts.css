@@ -1,0 +1,10 @@
+@font-face {
+	font-family: SemiBoldItalic;
+	src: url("/static/main/fonts/SemiBoldItalic.ttf");
+	font-weight: 900;
+}
+@font-face {
+	font-family: ExtraBold;
+	src: url("/static/main/fonts/ExtraBold.ttf");
+	font-weight: 600;
+}

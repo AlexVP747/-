@@ -13,7 +13,7 @@ body{
   align-items: center;
 }
 header{
-  width: 1000px;
+  width: 1500px;
   height: 90px;
   background-color: aliceblue;
   border: solid;
@@ -26,7 +26,7 @@ header{
     overflow: hidden;
     border: 2px solid;
     border-bottom-width: 4px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'SemiBoldItalic', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
