@@ -7,7 +7,7 @@ from django.db.models.signals import post_save
 
 class Review(models.Model):
   originalfoto=models.ImageField(upload_to='image', verbose_name="своё фото")
-  foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(200,200)])
+  foto=ImageSpecField(source='originalfoto', format='PNG', processors=[ResizeToFit(600,600)])
   text=models.TextField(verbose_name='текст')
   user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='reviews', verbose_name='пользователь')
   answer=models.IntegerField(verbose_name='ответ')
