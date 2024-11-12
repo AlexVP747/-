@@ -23,16 +23,16 @@ body{
 }
 main{
   display: flex;  flex-direction: column;  justify-content: column; align-items: center;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(48, 106, 141, 0.7);
   width: 1000px;
   
 }
 .text-l{
   display: flex;  flex-direction: column;  justify-content: column; align-items: center;
-  color: #2806b3;
+  color: #170366;
   padding: 20px;
   margin-top: 30px;
-  background-color: #c1e5eb;
+  background-color: #6c97cf;
   width: 500px;
   border-radius: 10px;
   border: rgb(181, 181, 235) 1px solid;
@@ -51,7 +51,7 @@ border-radius: 10px;
 }
 .H3-block{
   color: #220762;
-  background-color: #c1e5eb;
+  background-color: #6c97cf;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
