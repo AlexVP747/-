@@ -49,20 +49,6 @@ a:hover{
   -moz-box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
   box-shadow: 26px 11px 5px -6px rgba(34, 60, 80, 0.6);
 }
-@media(max-width:1250px){
-  .swiper{
-    width: 100%;
-  }
-}
-@media(max-width:850px){
-  .swiper{
-    height: 150px;
-    font-size: 20px;
-  }
-  .swiper-slide{
-    font-size: 20px;
-  }
-}
 .H5{
   color: blue;
   display: flex;
@@ -76,3 +62,5 @@ a:hover{
   margin-right: 100px;
   margin-top: 50px;
 }
+
+
