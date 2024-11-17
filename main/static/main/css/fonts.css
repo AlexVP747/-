@@ -8,3 +8,8 @@
 	src: url("/static/main/fonts/ExtraBold.ttf");
 	font-weight: 600;
 }
+@font-face {
+  font-family: PTAstra;
+  src: url("/static/main/fonts/PTAstraSerifBold.ttf"); 
+  font-weight: 900;
+}

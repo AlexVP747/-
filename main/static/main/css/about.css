@@ -12,11 +12,7 @@ a {
   margin-top: -20px;
   width: 230px;
 }
-@font-face {
-  font-family: PTAstra;
-  src: url("/static/main/fonts/PTAstraSerifBold.ttf"); 
-  font-weight: 900;
-}
+
  
 body{
   padding-top: 50px;
@@ -51,7 +47,7 @@ border-radius: 10px;
   font-family: PTAstra;
   text-align: justify;
   text-indent: 25px; 
-  padding: 10px 70px 10px 70px;
+  padding: 50px 100px 50px 100px;
 }
 
 .ocean{
