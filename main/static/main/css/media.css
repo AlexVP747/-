@@ -1,35 +1,35 @@
-@media(max-width:1250px){
+ @media(max-width:1250px){  /*главная страница */
   .swiper{
     width: 90vw;
   }
 }
-@media(max-width:850px){
+@media(max-width:850px){   /*главная страница */
   .swiper{
     height: 150px;
     font-size: 20px;
   }
-  .swiper-slide{
+  .swiper-slide{           /*главная страница */
     font-size: 20px;
   }
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px){   /*главная страница */
   .money{
       position: static;
   }
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px){   /*главная страница */
   .auth{
     width: 100%;
   }
 }
-@media(max-width: 1000px){
+@media(max-width: 1000px){   /*portfilio */
   .over{
     width: 100%;
     
   }
-  .portfolio{
+  .portfolio{               /*portfilio */
     margin: 50px;
   }
 }
