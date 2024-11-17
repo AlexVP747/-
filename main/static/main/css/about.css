@@ -25,11 +25,14 @@ body{
 
 .uptext{
   text-align: center;
-  color: rgb(70, 8, 214);
+  color: white;
   font-size: 23px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
 }
+/* .wiet{
+  color: white;
+} */
 
 .ram-block{
   background-color: rgba(234, 238, 241, 0.9);
