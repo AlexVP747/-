@@ -3,42 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/static/main/css/review.css">
-  <title>Отзывы</title>
+    <link rel="stylesheet" href="/static/main/css/review.css">
+    <link rel="stylesheet" href="/static/main/css/fonts.css">
+    <link rel="stylesheet" href="/static/main/css/media.css">
+      <title>Отзывы</title>
 </head>
 <body>
-  {% for review in list %}
-  <div class='review'>
-    <img src="{{review.foto.url}}" alt="фотография">  
-    <p>{{review.text}}</p>
-    <h3>{{review.user.username}}</h3>
-  {% if user.username == review.user.username %}
-  <div class="control">
-     <form action="/deletreview/{{review.id}}" method="POST">
-      {% csrf_token %}
-      <input type="submit" value="удалить"></form>
-  </div>
-  {% endif %}
-  
-  </div>
-  {% endfor %}
-
   {% if user.is_authenticated %}
-  <form method="POST" action='/addreview' enctype="multipart/form-data">
+  <form class="forma" method="POST" action='/addreview' enctype="multipart/form-data">
     {% csrf_token %}
     <div class="formcontent">
       <p>загрузка...</p>
     </div>
-  <input type="submit" value="сохранить">
+  <input class="save" type="submit" value="сохранить">
   </form>
 
-
   {% else %}
-  <h3>Чтобы оставить отзыв зарегистрируйтесь или войдите в систему</h3>
-  <a class="register" href="/login/">регистрация</a>
-  <a class="open" href="/login/login">войти</a>
+  <div class="title">
+    <h3>Чтобы оставить отзыв зарегистрируйтесь или войдите в систему</h3>
+  </div>
+  <button class="register"><a href="/login/">регистрация</a></button>
+  <button class="open"><a href="/login/login">войти</a></button>
   {% endif %}
+  
+    {% for review in list %}
+  <div class='review'>
+    <img src="{{review.foto.url}}" alt="фотография">  
+    <p class="titlefot">{{review.text}}</p>
+    <h3 class="nike">{{review.user.username}}</h3>
+    {% if user.username == review.user.username %}
+      <div class="control">
+        <form action="/deletreview/{{review.id}}" method="POST">
+          {% csrf_token %}
+          <input class="delete" type="submit" value="удалить">
+        </form>
+      </div>
+    {% endif %}
+  </div>
+    {% endfor %}
 
-  <script src="/static/main/js/review.js"></script>
+    <script src="/static/main/js/review.js"></script>
 </body>
 </html>
