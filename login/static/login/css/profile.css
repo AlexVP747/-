@@ -24,31 +24,21 @@ header{
     margin: 10px 20px;
     padding: 15px 30px;
     border: 2px solid;
+    border-radius: 5px;
     border-bottom-width: 4px;
     font-family: 'SemiBoldItalic', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    color: rgba(30, 255, 188, 1);
+    color: rgb(8, 56, 42);
     background: rgba(255, 255, 255, 1);
     transition: color .3s, background .5s;
+    
 }
-.animated-button:hover {
-  animation: stripes .75s infinite linear;
-  background: linear-gradient(45deg, rgba(30, 255, 188, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(30, 255, 188, 1) 50%, rgba(30, 255, 188, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
-  background-size: 10px 10px;
-  color: #FF50E5;
-}
-@keyframes stripes {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 0;
-  }
-}
+button:hover { 
+  background-color: rgb(88, 88, 101);
 
-
+}
 
 main{
   background-color: rgba(255, 255, 255, .5);
@@ -58,4 +48,17 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.exit{
+  margin-top: 5px;
+  background-color: rgb(83, 158, 224);
+  border: rgb(181, 181, 235) 1px solid; 
+  border-color: rgba(11, 55, 144, 0.603);
+  border-radius: 10px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  width: 300px;
+  padding: 5px;
+  cursor: pointer;
 }
