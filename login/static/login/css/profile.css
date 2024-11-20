@@ -39,7 +39,10 @@ button:hover {
   background-color: rgb(88, 88, 101);
 
 }
-
+.title{
+  text-align: center;
+  color: white;
+}
 main{
   background-color: rgba(255, 255, 255, .5);
   width: 1000px;
