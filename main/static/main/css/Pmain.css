@@ -89,7 +89,7 @@ body {
 	text-transform: uppercase;
 	font-size: calc(var(--index) * .71);
 	letter-spacing: -.02vw;
-	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	padding: calc(var(--index) * .2) calc(var(--index) * 1.00);
 	background-color: transparent;
 	color: #fff;
 	border-radius: 10em;
