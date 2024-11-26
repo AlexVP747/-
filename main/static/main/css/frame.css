@@ -30,15 +30,34 @@ body{
   padding-top: 50px;
   background-image: url("/static/main/img/bgfr.jpg"); 
   background-size: cover;
- 
-
-}
-.block-frams{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+main{
+  display: flex;  flex-direction: column;  justify-content: column; align-items: center;
+  background-color: rgba(48, 106, 141, 0.7);
+  width: 1000px;
+  
+}
+.block-frame{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding: 50px;
 }
 
+
+
+/* 
 .frams{
   margin-left: 30px;
   margin-bottom: 30px;
@@ -47,5 +66,73 @@ body{
   border: rgb(2, 2, 16) 5px solid;
   display: flex;
   justify-content: space-between;
-
+  
 }
+.obodok{
+  background-image: url("/static/main/img/img-frame/obodok.jpg"); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border: rgb(2, 2, 16) 5px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.pol-obodoc{
+  background-image: url("/static/main/img/img-frame/pol-obodoc.jpg"); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border: rgb(2, 2, 16) 5px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.kombi{
+  background-image: url("/static/main/img/img-frame/kombi.jpg"); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border: rgb(2, 2, 16) 5px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.bez-obodoc{
+  background-image: url("/static/main/img/img-frame/bez-obodoc.jpg"); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border: rgb(2, 2, 16) 5px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.lektor{
+  background-image: url("/static/main/img/img-frame/lektor.jpg"); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border: rgb(2, 2, 16) 5px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.titan{
+  background-image: url("/static/main/img/img-frame/titan.jpg"); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border: rgb(2, 2, 16) 5px solid;
+  display: flex;
+  justify-content: space-between;
+} */
+
+
