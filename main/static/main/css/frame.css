@@ -13,7 +13,7 @@ a {
   display: flex;  flex-direction: column;  justify-content:center; align-items: center;
   color: #32058d;
   padding: 20px;
-  margin-left: 40%;
+  margin-top: 40px;
   background-color: #c1e5eb;
   width: 500px;
   border-radius: 10px;
@@ -45,7 +45,7 @@ main{
   display: flex;  flex-direction: column;  justify-content: column; align-items: center;
   background-color: rgba(48, 106, 141, 0.7);
   width: 1000px;
-  
+  margin-top: 0px;
 }
 .block-f{
   display: flex;
