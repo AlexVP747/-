@@ -13,7 +13,7 @@ body{
   align-items: center;
 }
 header{
-  width: 1180px;
+  width: 1340px;
   height: 90px;
   background-color: aliceblue;
   border: solid;
@@ -37,7 +37,6 @@ header{
 }
 button:hover { 
   background-color: rgb(88, 88, 101);
-
 }
 .title{
   text-align: center;
@@ -45,6 +44,8 @@ button:hover {
 }
 main{
   background-color: rgba(255, 255, 255, .5);
+  border: 2px solid;
+  border-radius: 5px;
   width: 1000px;
   margin-top: 70px;
   height: 800px;
