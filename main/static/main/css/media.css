@@ -24,12 +24,27 @@
     width: 100%;
   }
 }
-@media(max-width: 1000px){   /*portfilio */
+@media(max-width: 1000px){   /*portfolio */
   .over{
     width: 100%;
     
   }
-  .portfolio{               /*portfilio */
+  .portfolio{               /*portfolio */
     margin: 50px;
+  }
+}
+@media(max-width: 800px){   /*lensess */
+  .over-l{
+    width: 100%;
+  }
+  .text-l{
+    width: 100%;
+  }
+   
+  .H3-block{               /*lensess */
+    width: 100%;
+  } 
+  .video-len{
+    width: 100%;
   }
 }
